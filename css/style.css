@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+header {
+  margin: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1F2029;
+  padding: 5px 20px;
+  height: 50px;
+  box-shadow: 0 0 7px #000;
+}
+
+nav {
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+nav a:hover {
+  color: #9f38ee;
+}
+
+nav a,
+#right a {
+  font-size: 1.8em;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 10px; 
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+#right a:hover {
+  color: #9f38ee;
+}
+
+#form-top {
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-bar-top {
+  color: #ffffff;
+  font-size: 1.5em;
+  width: 250px;
+  height: 45px;
+  border-radius: 6px 0 0 6px;
+  background-color: #35363E;
+  border: none;
+  padding-right: 45px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.search-bar-top::placeholder {
+  color: #ADB0B7;
+}
+
+.search-bar-top:focus {
+  outline: none;
+  border-color: transparent;
+}
+
+.search-enter-top {
+  width: 45px;
+  height: 47px;
+  background-color: #35363E;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  margin-left: 0.5px;
+  z-index: 2;
+  font-size: 1.9em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.search-enter-top:hover {
+  color: #9f38ee;
+}
