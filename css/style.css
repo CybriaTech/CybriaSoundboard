@@ -97,3 +97,9 @@ nav a,
 .search-enter-top:hover {
   color: #9f38ee;
 }
+
+.main-title {
+  color: #fff;
+  font-size: 2.1em;
+  text-align: center;
+}
