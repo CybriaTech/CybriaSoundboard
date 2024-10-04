@@ -7,6 +7,7 @@ document.write(`
     <a href="other.html">Other Links</a>
     <a href="https://discord.gg/zhsmmNNtJT" target="_blank"><i class="fab fa-discord"></i></a>
     <a href="https://github.com/CybriaTech/CybriaSoundboard" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="widgetbot.html" target="_blank"><i class="fas fa-chat"></i></a>
   </nav>
   <div id="right">
         <form id="form-top" action="search.html" method="get">
