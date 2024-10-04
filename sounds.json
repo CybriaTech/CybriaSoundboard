@@ -1,6 +1,12 @@
 [
   {
     "title": "Ahh it's coming out",
-    "src": "/audio/ahh-its-coming-out.mp3"
+    "src": "/audio/ahh-its-coming-out.mp3",
+    "released": "9/30/2024"
+  },
+  {
+    "title": "I don't give a shete",
+    "src": "/audio/i-dont-give-a-shete.mp3",
+    "released": "10/4/2024"
   }
 ]
