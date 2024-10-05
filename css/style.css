@@ -104,3 +104,40 @@ nav a,
   text-align: center;
   font-weight: 700;
 }
+
+#sounds {
+  display: flex;
+  margin-right: 100px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  margin-left: 100px;
+}
+
+#sound {
+  z-index: 2;
+  width: 200px;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #25262E;
+  overflow: hidden;
+}
+
+#soundbtn {
+  background: url(/img/page/btn.png) no-repeat;
+  background-position: -5px -5px;
+	width: 188px;
+	height: 178px;
+}
+
+#soundbtn:active {
+	background: url(/img/page/btn.png) no-repeat;
+	background-position: -109px -5px
+}
+
+
+
