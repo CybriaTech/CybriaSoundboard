@@ -130,9 +130,11 @@ nav a,
 
 #soundbtn {
   background: url(/img/page/btn.png) no-repeat;
-  width: 188px;
-  height: 178px;
+  width: 94px;
+  height: 87px;
   display: block;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -147,7 +149,7 @@ nav a,
 }
 
 .soundtitle { 
-  font-size: 1.7em;
+  font-size: 1.6em;
 }
 
 .release {
