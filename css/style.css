@@ -117,11 +117,12 @@ nav a,
 
 #sound {
   z-index: 2;
+  padding: 10px;
   width: 200px;
   margin: 10px;
   padding: 5px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
   background-color: #25262E;
   overflow: hidden;
@@ -129,7 +130,7 @@ nav a,
 
 #soundbtn {
   background: url(/img/page/btn.png) no-repeat;
-  background-position: -5px -5px;
+  background-position: 109px -5px;
   width: 188px;
   height: 178px;
   cursor: pointer;
@@ -142,6 +143,7 @@ nav a,
 
 .soundtitle,
 .release {
+  margin: 7px;
   text-align: left;
 }
 
@@ -150,7 +152,7 @@ nav a,
 }
 
 .release {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 
