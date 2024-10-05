@@ -130,11 +130,10 @@ nav a,
 
 #soundbtn {
   background: url(/img/page/btn.png) no-repeat;
-  width: 94px;
-  height: 87px;
+  width: 100px;
+  height: 100px;
   display: block;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
   cursor: pointer;
 }
 
