@@ -129,9 +129,10 @@ nav a,
 }
 
 #soundbtn {
-  background: url(/img/page/btn.png) no-repeat center center;
+  background: url(/img/page/btn.png) no-repeat;
   width: 100px;
   margin-left: 50%;
+  background-position: center;
   height: 100px;
   display: block;
   background-size: contain;
@@ -139,7 +140,7 @@ nav a,
 }
 
 #soundbtn:active {
-  background: url(/img/page/btn-pressed.png) no-repeat center center;
+  background: url(/img/page/btn-pressed.png) no-repeat;
 }
 
 .soundtitle,
