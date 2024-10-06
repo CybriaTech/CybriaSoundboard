@@ -132,6 +132,7 @@ nav a,
   background: url(/img/page/btn.png) no-repeat center center;
   width: 100px;
   height: 100px;
+  margin: 0 auto;
   display: block;
   background-size: contain;
   cursor: pointer;
