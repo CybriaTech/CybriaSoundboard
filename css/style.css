@@ -132,9 +132,8 @@ nav a,
   background: url(/img/page/btn.png) no-repeat;
   width: 100px;
   margin-left: 50%;
-  background-position: center;
+  background-position: center center;
   height: 100px;
-  border: 2px solid #ff0000; /* tst */
   display: block;
   background-size: contain;
   cursor: pointer;
