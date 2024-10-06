@@ -129,10 +129,9 @@ nav a,
 }
 
 #soundbtn {
-  background: url(/img/page/btn.png) no-repeat;
+  background: url(/img/page/btn.png) no-repeat center center;
   width: 100px;
   margin-left: 50%;
-  background-position: center center;
   height: 100px;
   display: block;
   background-size: contain;
