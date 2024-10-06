@@ -106,13 +106,14 @@ nav a,
 }
 
 #sounds {
-  display: flex;
   margin-right: 100px;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   z-index: 1;
   margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 13px;
 }
 
 .sound {
