@@ -10,7 +10,7 @@ document.write(`
     <a href="widgetbot.html" target="_blank"><i class="fas fa-chat"></i></a>
   </nav>
   <div id="right">
-        <form id="form-top" action="search.html" method="get">
+        <form id="form-top" action="q.html" method="get">
       <input type="text" name="q" class="search-bar-top" placeholder="Search For Sounds">
       <button class="search-enter-top"><i class="fas fa-search"></i></button>
       </form>
