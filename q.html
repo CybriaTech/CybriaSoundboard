@@ -78,7 +78,7 @@
             searchresults.innerHTML = '';
 
             try {
-                const response = await fetch('/sounds.json');
+                const response = await fetch('sounds.json');
                 const sounds = await response.json();
                 const soundparent = document.getElementById('sounds');
                 const soundbutton = genbtn(sound);
