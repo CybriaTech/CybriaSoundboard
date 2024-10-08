@@ -92,34 +92,7 @@
 
                 if (outputsound.length > 0) {
                     outputsound.forEach(sound => {
-                        const audioid = rng();
-                        const soundcomponent  = document.createElement('div');
-                        soundcomponent.classList.add('sound');
-
-                        const soundbtn = document.createElement('div');
-                        soundbtn.classList.add('soundbtn');
-                        soundbtn.setAttribute('onclick', `document.getElementById('${audioid}').play();`);
-
-                        const title = document.createElement('p');
-                        title.classList.add('soundtitle');
-                        title.textContent = sound.title;
-
-                        const release = document.createElement('p');
-                        release.classList.add('release');
-                        release.textContent = sound.released;
-
-                        const audio = document.createElement('audio');
-                        audio.classList.add('sound');
-                        audio.setAttribute('id', audioid);
-                        audio.setAttribute('src', sound.src);
-                        audio.setAttribute('preload', 'auto');
-
-                        soundcomponent.appendChild(soundbtn);
-                        soundcomponent.appendChild(title);
-                        soundcomponent.appendChild(release);
-                        soundcomponent.appendChild(audio);
-
-                        searchresults.appendChild(soundcomponent);
+                      genbtn(sound);
                     });
                 } else {
                 }
@@ -128,6 +101,37 @@
                 searchresults.textContent = 'None/Error';
             }
         }
+
+function genbtn(sound) {
+    const audioid = rng();
+    const soundcomponent = document.createElement('div');
+    soundcomponent.classList.add('sound');
+
+    const soundbtn = document.createElement('div');
+    soundbtn.classList.add('soundbtn');
+    soundbtn.setAttribute('onclick', `document.getElementById('${audioid}').play();`);
+
+    const title = document.createElement('p');
+    title.classList.add('soundtitle');
+    title.textContent = sound.title;
+
+    const release = document.createElement('p');
+    release.classList.add('release');
+    release.textContent = sound.released;
+
+    const audio = document.createElement('audio');
+    audio.classList.add('sound');
+    audio.setAttribute('id', audioid);
+    audio.setAttribute('src', sound.src);
+    audio.setAttribute('preload', 'auto');
+
+    soundcomponent.appendChild(soundbtn);
+    soundcomponent.appendChild(title);
+    soundcomponent.appendChild(release);
+    soundcomponent.appendChild(audio);
+
+    return soundcomponent;
+}
 
       function rng() {
         return Math.floor(Math.random() * 10000);
