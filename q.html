@@ -92,7 +92,8 @@
 
                 if (outputsound.length > 0) {
                     outputsound.forEach(sound => {
-                      genbtn(sound);
+                    const soundbutton = genbtn(sound);
+                    searchresults.appendChild(soundbutton);
                     });
                 } else {
                 }
