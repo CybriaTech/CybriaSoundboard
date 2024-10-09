@@ -37,6 +37,7 @@ fetch('/sounds.json')
     .then(response => response.json())
     .then(sounds => {
         const soundparent = document.getElementById('sounds');
+        sounds.sort((a, b) => a.title.localeCompare(b.title));
         
         sounds.forEach(sound => {
             const soundbutton = genbtn(sound);
