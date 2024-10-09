@@ -81,8 +81,6 @@
                 const response = await fetch('sounds.json');
                 const sounds = await response.json();
                 const soundparent = document.getElementById('sounds');
-                const soundbutton = genbtn(sound);
-                soundparent.appendChild(soundbutton);
                 document.querySelector('.main-title').textContent = `Results for "${query}"`;
                 document.title = `Results for "${query}" | CybriaSoundboard"`;
 
