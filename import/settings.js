@@ -13,24 +13,11 @@ document.write(`
     </div>
 `);
 
-const soundplayer = document.querySelectorAll('audio.sound');
-const volumerange = document.getElementById('volume');
-
 function stop() {
+const soundplayer = document.querySelectorAll('audio.sound');
   soundplayer.forEach(function(audio) {
       audio.pause();
       audio.currentTime = 0;
     });
   }
-
-function setvolume() {
-    const volval = volumerange.value;
-
-    const volume = volval / 100;
-    soundplayer.volume = Math.min(volume, 1);
-}
-
-volumerange.addEventListener('input', setvolume);
-
-setvolume();
 
