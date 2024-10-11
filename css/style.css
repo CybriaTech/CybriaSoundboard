@@ -163,6 +163,7 @@ nav a,
   background-color: #1B1C24;
   border-radius: 12px;
   top: 50%;
+  z-index: 9999;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
