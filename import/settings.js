@@ -21,16 +21,3 @@ function stop() {
       audio.currentTime = 0;
     });
   }
-
-const audiocontext = new (window.AudioContext || window.webkitAudioContext)();
-const source = audiocontext.createMediaElementSource(sound);
-const gainnode = audiocontext.createGain();
-
-source.connect(gainnode);
-gainnode.connect(audiocontext.destination);
-
-function setvol(value) {
-    const gainvalue = value / 100;
-    gainnode.gain.setValueAtTime(gainvalue, audiocontext.currentTime);
-}
-
