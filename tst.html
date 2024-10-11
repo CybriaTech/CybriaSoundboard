@@ -39,16 +39,64 @@
     #settingsmain {
       display: flex;
       flex-direction: column;
+      padding: 20px 0;
     }
 
     label {
       font-size: 1.8em;
       color: #fff;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-align: center;
     }
 
     #volume {
       width: 70%;
-      margin: 10px 0;
+      margin: 0 auto 20px auto;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 10px;
+      background: #35363E;
+      border-radius: 5px;
+      outline: none;
+      opacity: 0.9;
+      transition: opacity 0.3s;
+    }
+
+    #volume:hover {
+      opacity: 1;
+    }
+
+    #volume::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #9f38ee;
+      cursor: pointer;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #volume::-webkit-slider-thumb:hover {
+      background: #9f38ee;
+      box-shadow: 0 0 10px rgba(159, 56, 238, 0.8);
+    }
+
+    #volume::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #9f38ee;
+      cursor: pointer;
+      box-shadow: 0 0 5px rgba(159, 56, 238, 0.5);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #volume::-moz-range-thumb:hover {
+      background: #ff4444;
+      box-shadow: 0 0 10px rgba(159, 56, 238, 0.8);
     }
 
     .settingsbtn {
@@ -57,9 +105,16 @@
       color: #fff;
       background-color: #35363E;
       font-size: 1.6em;
-      padding: 5px;
-      width: auto;
-      height: auto;
+      padding: 10px 20px;
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .settingsbtn:hover {
+      background-color: #50515b;
     }
     </style>
 </head>
