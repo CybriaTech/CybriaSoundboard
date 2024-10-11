@@ -7,14 +7,14 @@ document.write(`
       <div id="settingsmain">
         <label for="volume">Volume</label>
         <input id="volume" type="range" min="0" max="100" value="50">
-        <button class="settingsbtn" onclick="revert();">Clear Changes</button>
-        <button class="settingsbtn" onclick="stop();">Stop All Sounds</button>
+        <button class="settingsbtn" onclick="revert()">Clear Changes</button>
+        <button class="settingsbtn" onclick="stop()">Stop All Sounds</button>
       </div>
     </div>
 `);
 
 function stop() {
-  const sound = document.querySelectorAll('.sound');
+  const sound = document.querySelectorAll('audio.sound');
 
   sound.forEach(function(audio) {
       audio.pause();
