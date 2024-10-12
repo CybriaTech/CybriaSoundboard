@@ -13,6 +13,22 @@ document.write(`
     </div>
 `);
 
+const audiocontext = new (window.AudioContext || window.webkitAudioContext)();
+const gainnode = audiocontext.createGain();
+gainnode.gain.value = 1;
+
+function setnode() {
+  var soundplayers = document.querySelectorAll('audio.sound');
+  
+  soundplayers.forEach(function(audio) {
+    if (!audio.audioSource) {
+      let source = audiocontext.createMediaElementSource(audio);
+      source.connect(gainnode).connect(audiocontext.destination);
+      audio.audioSource = source;
+    }
+  });
+}
+
 function stop() {
 var soundplayer = document.querySelectorAll('audio.sound');
   soundplayer.forEach(function(audio) {
@@ -23,13 +39,13 @@ var soundplayer = document.querySelectorAll('audio.sound');
 
 function setvolume() {
   var volumerange = document.getElementById('volume');
-  var soundplayer = document.querySelectorAll('audio.sound');
   
   var volval = volumerange.value / 100;
-  soundplayer.forEach(function(audio) {
-    audio.volume = volval;
+  gainnode.gain.value = volval;
   });
 }
+
+window.addEventListener('DOMContentLoaded', setnode);
 
 document.getElementById('volume').addEventListener('input', setvolume);
 
