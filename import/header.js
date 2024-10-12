@@ -7,7 +7,7 @@ document.write(`
     <a href="other.html">Other Links</a>
     <a href="https://discord.gg/zhsmmNNtJT" target="_blank"><i class="fab fa-discord"></i></a>
     <a href="https://github.com/CybriaTech/CybriaSoundboard" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="widgetbot.html" target="_blank"><i class="fas fa-comment"></i></a>
+    <a href="widgetbot.html"><i class="fas fa-comment"></i></a>
     <a onclick="document.getElementById('settings').style.display = 'flex';"><i class="fas fa-cog"></i></a>
   </nav>
   <div id="right">
