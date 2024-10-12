@@ -42,8 +42,13 @@ function setvolume() {
   
   var volval = volumerange.value / 100;
   gainnode.gain.value = volval;
-  });
 }
+
+document.addEventListener('click', function() {
+  if (audiocontext.state === 'suspended') {
+    audiocontext.resume();
+  }
+});
 
 window.addEventListener('DOMContentLoaded', setnode);
 
