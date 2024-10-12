@@ -22,6 +22,7 @@ function genbtn(sound) {
     const audio = document.createElement('audio');
     audio.classList.add('sound');
     audio.setAttribute('id', audioid);
+    audio.setAttribute('controls');
     audio.setAttribute('src', sound.src);
     audio.setAttribute('preload', 'auto');
 
