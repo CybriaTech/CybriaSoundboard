@@ -13,10 +13,8 @@ document.write(`
     </div>
 `);
 
-const soundplayer = document.querySelectorAll('audio.sound');
-const volumerange = document.getElementById('volume');
-
 function stop() {
+var soundplayer = document.querySelectorAll('audio.sound');
   soundplayer.forEach(function(audio) {
       audio.pause();
       audio.currentTime = 0;
@@ -24,6 +22,8 @@ function stop() {
   }
 
 function setvolume() {
+    const soundplayer = document.querySelectorAll('audio.sound');
+    const volumerange = document.getElementById('volume');
     const volval = volumerange.value;
 
     const volume = volval / 100;
