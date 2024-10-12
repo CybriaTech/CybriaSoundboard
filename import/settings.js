@@ -22,14 +22,18 @@ var soundplayer = document.querySelectorAll('audio.sound');
   }
 
 function setvolume() {
-    const soundplayer = document.querySelectorAll('audio.sound');
-    const volumerange = document.getElementById('volume');
-    const volval = volumerange.value;
-
-    const volume = volval / 100;
-    soundplayer.volume = Math.min(volume, 1);
+  var volumerange = document.getElementById('volume');
+  var soundplayer = document.querySelectorAll('audio.sound');
+  
+  var volval = volumerange.value / 100;
+  soundplayer.forEach(function(audio) {
+    audio.volume = volval;
+  });
 }
 
-volumerange.addEventListener('input', setvolume);
+document.getElementById('volume').addEventListener('input', setvolume);
 
-setvolume();
+function revert() {
+  document.getElementById('volume').value = 50;
+  setvolume();
+}
