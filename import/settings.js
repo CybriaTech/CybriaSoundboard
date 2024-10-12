@@ -50,9 +50,14 @@ document.addEventListener('click', function() {
   }
 });
 
-window.addEventListener('DOMContentLoaded', setnode);
-
-document.getElementById('volume').addEventListener('input', setvolume);
+window.addEventListener('DOMContentLoaded', function() {
+  setnode();
+  
+  var volumerange = document.getElementById('volume');
+  if (volumerange) {
+    volumerange.addEventListener('input', setvolume);
+  }
+});
 
 function revert() {
   document.getElementById('volume').value = 50;
