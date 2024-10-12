@@ -275,14 +275,6 @@ label {
   background-color: #50515b;
 }
 
-.main-title {
-  text-align: left;
-  color: #fff;
-  font-weight: 600;
-  font-size: 2.3em;
-  margin-bottom: 5px;
-}
-
 #links {
   display: flex;
   flex-direction: column;
