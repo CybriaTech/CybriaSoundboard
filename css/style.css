@@ -175,14 +175,13 @@ nav a,
 }
 
 #settingsheader {
-  margin: 0 0 20px 0;
-  width: 100%;
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
 .settingsclose {
+  margin: 0 0 20px 0;
   background-color: transparent;
   border: none;
   padding: 10px;
