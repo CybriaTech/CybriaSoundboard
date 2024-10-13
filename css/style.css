@@ -175,6 +175,7 @@ nav a,
 }
 
 #settingsheader {
+  margin: 0 0 20px 0;
   position: absolute;
   top: 10px;
   right: 10px;
