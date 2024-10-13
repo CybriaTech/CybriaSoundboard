@@ -78,5 +78,20 @@
     "title": "Evil Jonkler",
     "src": "/audio/evil-jonkler.mp3",
     "released": "10/9/2024"
+  },
+  {
+    "title": "Screaming in public restrooms prank",
+    "src": "/audio/screaming-in-public-restrooms-prank.mp3",
+    "released": "10/12/2024"
+  },
+  {
+    "title": "Screaming in public restrooms prank (Modified)",
+    "src": "/audio/screaming-in-public-restrooms-prank-modified.mp3",
+    "released": "10/12/2024"
+  },
+  {
+    "title": "Burger King crown guy (full)",
+    "src": "/audio/burger-king-crown.mp3",
+    "released": "10/12/2024"
   }
 ]
